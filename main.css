@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html, h1, h2, h3, a{
+    font-family: "Raleway";
+}
+
+section:not(#home) {
+    margin: 2rem 0;
+    padding: 0 1em;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #F97300;
+}
+
+.navbar-brand:visited {
+    color: #f4f4f4;
+}
+
+.nav-link, .navbar-brand {
+    color: #f4f4f4;
+}
+
+.nav-link {
+    margin-right: 1em;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    background: #f4f4f4;
+    color: #f97300;
+}
+
+.nav-link:active {
+    color: #000;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+
+/* HEADER */
+.header {
+    height: 100vh;
+    background-image: url('./images/laptop.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(244, 244, 244, 0.79);
+}
+
+.description {
+    position: absolute;
+    top: 30%;
+    margin: auto;
+}
+
+.description h1 {
+    color: #F97300;
+}
+
+.description p {
+    color: #666;
+    font-size: calc(1rem + 0.4vw);
+    width: 50%;
+    line-height: 1.5;
+}
+
+.description .btn {
+    border: 1px solid #f97300;
+    background: #F97300;
+    color: #fff;
+    font-size: calc(1rem + 0.2vw);
+}
+
+.description .btn:hover {
+    box-shadow: 0 0 0 0.15rem #F97300;
+    background-color: #cb5f00;
+    border-color: #fff;
+}
+
+.description .btn:active {
+    background-color: #984802;
+    color: #f4f4f4;
+}
+
+/* ABOUT */
+
+.description {
+    padding: 0 1em;
+}
+
+h2 {
+    color: #f97300;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+#about img {
+    display: block;
+    width: 300px;
+    height: 300px;
+    padding: 1em;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+}
+
+#about span {
+    display: block;
+    color: #888;
+    text-align: center;
+}
+
+#about .desc {
+    border-left: 4px solid #10828C;
+}
+
+#about .desc h3 {
+    color: #10828C;
+}
+
+#about .desc p {
+    line-height: 1.5;
+    color: #888;
+}
+
+/* PORTFOLIO */
+
+#portfolio img, #blog .card img {
+    width: 100%;
+    height: 15rem;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+#portfolio img:hover {
+    box-shadow: 0 0 20px #ccc;
+    transform: scale(1.01);
+}
+
+/* BLOG */
+
+#blog .card {
+    transition: all ease 0.2s;
+}
+
+#blog .card img {
+    height: 12em;
+    cursor: auto;
+    border-radius: 0;
+}
+
+#blog .card-title {
+    color: #F97300;
+}
+
+#blog .card-body {
+    padding: 1em;
+}
+
+.card-footer {
+    padding: 0;
+}
+
+.card-footer .arrow-btn {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5em;
+    border-radius: inherit;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.arrow-btn:hover {
+    background: dodgerblue;
+}
+
+.arrow-btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.arrow-btn .arrow-icon {
+    width: 1rem;
+    height: 1rem;
+    background: url(./images/icons8-arrow-50.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.arrow-btn:hover .arrow-icon {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* TEAM */
+
+#team {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#team .item {
+    position: relative;
+}
+
+#team .item img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+}
+
+#team .des {
+    background-color: #f97300;
+    color: #fff;
+    text-align: center;
+    border-bottom-left-radius: 93%;
+    transition: 0.3s ease-in-out;
+}
+
+#team .item:hover .des {
+    height: 100%;
+    background-color: #F973007d;
+    position: absolute;
+    width: 90%;
+    padding: 5em;
+    top: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* Scroll button */
+
+#scrollToTopBtn {
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    z-index: 99;
+    padding: 1em;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: opacity 0.3s;
+}
+
+#scrollToTopBtn img {
+    width: 100%;
+    max-width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+#scrollToBottomBtn:active {
+    border: none;
+}
+
+
+/* Tablet and Mobile Responsive */
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .description p {
+        width: 90%;
+    }
+
+    section {
+        padding-bottom: 2rem;
+    }
+
+    #team {
+        height: 100%;
+    }
+}
