@@ -24,15 +24,15 @@ This is a portfolio landing page made with Bootstrap and vanilla CSS along with 
 
 ## Features
 
--Responsive Design: Fully mobile-friendly layout optimized for desktop, tablet, and mobile devices.
--Fixed Navigation Bar: Smooth-scrolling links to different sections with a collapse option for smaller screens.  
--Hero Section: Full-screen header with background image, overlay, and a call-to-action button.
--About Section: Personal introduction layout with profile image and custom left border styling.  
--Portfolio Section: Grid layout showcasing project thumbnails with hover effects.  
--Blog Section: Card-based layout for articles with interactive read-more buttons.  
--Team Section: Team member grid with hover animations.  
--Contact Form: Integrated form fields for user feedback and inquiries.  
--Scroll-to-Top Button: Floating fixed action button that appears when scrolling down the page.  
+1. Responsive Design: Fully mobile-friendly layout optimized for desktop, tablet, and mobile devices.
+2.Fixed Navigation Bar: Smooth-scrolling links to different sections with a collapse option for smaller screens.  
+3. Hero Section: Full-screen header with background image, overlay, and a call-to-action button.
+4. About Section: Personal introduction layout with profile image and custom left border styling.  
+5. Portfolio Section: Grid layout showcasing project thumbnails with hover effects.  
+6. Blog Section: Card-based layout for articles with interactive read-more buttons.  
+7. Team Section: Team member grid with hover animations.  
+8. Contact Form: Integrated form fields for user feedback and inquiries.  
+9. Scroll-to-Top Button: Floating fixed action button that appears when scrolling down the page.  
 
 ### Links
 
