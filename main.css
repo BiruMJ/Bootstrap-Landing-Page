@@ -5,7 +5,11 @@
     scroll-behavior: smooth;
 }
 
-html, h1, h2, h3, a{
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, a {
     font-family: "Raleway";
 }
 
@@ -28,8 +32,8 @@ section:not(#home) {
 }
 
 .nav-link {
-    margin-right: 1em;
-    font-weight: 500;
+    margin-right: 2em;
+    font-weight: 600;
 }
 
 .nav-link:hover {
@@ -194,6 +198,7 @@ h2 {
     border-radius: inherit;
     cursor: pointer;
     overflow: hidden;
+    transition: all 0.3s ease ;
 }
 
 .arrow-btn:hover {
